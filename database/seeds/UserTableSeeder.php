@@ -23,10 +23,10 @@ class UserTableSeeder extends Seeder
 
         //用户
         $user = \App\Models\User::create([
-            'username' => 'root',
-            'phone' => '18908221080',
+            'username' => 'admin',
+            'phone' => '18707497634',
             'name' => '超级管理员',
-            'email' => 'root@dgg.net',
+            'email' => 'admin@qq.com',
             'password' => bcrypt('123456'),
             'uuid' => \Faker\Provider\Uuid::uuid()
         ]);
@@ -51,11 +51,11 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.user',
                         'icon_id' => '123',
                         'child' => [
-                            ['name' => 'system.user.create', 'display_name' => '添加用户','route'=>'admin.user.create'],
-                            ['name' => 'system.user.edit', 'display_name' => '编辑用户','route'=>'admin.user.edit'],
-                            ['name' => 'system.user.destroy', 'display_name' => '删除用户','route'=>'admin.user.destroy'],
-                            ['name' => 'system.user.role', 'display_name' => '分配角色','route'=>'admin.user.role'],
-                            ['name' => 'system.user.permission', 'display_name' => '分配权限','route'=>'admin.user.permission'],
+                            ['name' => 'system.user.create', 'display_name' => '添加用户', 'route' => 'admin.user.create'],
+                            ['name' => 'system.user.edit', 'display_name' => '编辑用户', 'route' => 'admin.user.edit'],
+                            ['name' => 'system.user.destroy', 'display_name' => '删除用户', 'route' => 'admin.user.destroy'],
+                            ['name' => 'system.user.role', 'display_name' => '分配角色', 'route' => 'admin.user.role'],
+                            ['name' => 'system.user.permission', 'display_name' => '分配权限', 'route' => 'admin.user.permission'],
                         ]
                     ],
                     [
@@ -64,10 +64,10 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.role',
                         'icon_id' => '121',
                         'child' => [
-                            ['name' => 'system.role.create', 'display_name' => '添加角色','route'=>'admin.role.create'],
-                            ['name' => 'system.role.edit', 'display_name' => '编辑角色','route'=>'admin.role.edit'],
-                            ['name' => 'system.role.destroy', 'display_name' => '删除角色','route'=>'admin.role.destroy'],
-                            ['name' => 'system.role.permission', 'display_name' => '分配权限','route'=>'admin.role.permission'],
+                            ['name' => 'system.role.create', 'display_name' => '添加角色', 'route' => 'admin.role.create'],
+                            ['name' => 'system.role.edit', 'display_name' => '编辑角色', 'route' => 'admin.role.edit'],
+                            ['name' => 'system.role.destroy', 'display_name' => '删除角色', 'route' => 'admin.role.destroy'],
+                            ['name' => 'system.role.permission', 'display_name' => '分配权限', 'route' => 'admin.role.permission'],
                         ]
                     ],
                     [
@@ -76,9 +76,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.permission',
                         'icon_id' => '12',
                         'child' => [
-                            ['name' => 'system.permission.create', 'display_name' => '添加权限','route'=>'admin.permission.create'],
-                            ['name' => 'system.permission.edit', 'display_name' => '编辑权限','route'=>'admin.permission.edit'],
-                            ['name' => 'system.permission.destroy', 'display_name' => '删除权限','route'=>'admin.permission.destroy'],
+                            ['name' => 'system.permission.create', 'display_name' => '添加权限', 'route' => 'admin.permission.create'],
+                            ['name' => 'system.permission.edit', 'display_name' => '编辑权限', 'route' => 'admin.permission.edit'],
+                            ['name' => 'system.permission.destroy', 'display_name' => '删除权限', 'route' => 'admin.permission.destroy'],
                         ]
                     ],
                 ]
@@ -95,9 +95,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.category',
                         'icon_id' => '29',
                         'child' => [
-                            ['name' => 'zixun.category.create', 'display_name' => '添加分类','route'=>'admin.category.create'],
-                            ['name' => 'zixun.category.edit', 'display_name' => '编辑分类','route'=>'admin.category.edit'],
-                            ['name' => 'zixun.category.destroy', 'display_name' => '删除分类','route'=>'admin.category.destroy'],
+                            ['name' => 'zixun.category.create', 'display_name' => '添加分类', 'route' => 'admin.category.create'],
+                            ['name' => 'zixun.category.edit', 'display_name' => '编辑分类', 'route' => 'admin.category.edit'],
+                            ['name' => 'zixun.category.destroy', 'display_name' => '删除分类', 'route' => 'admin.category.destroy'],
                         ]
                     ],
                     [
@@ -106,9 +106,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.tag',
                         'icon_id' => '15',
                         'child' => [
-                            ['name' => 'zixun.tag.create', 'display_name' => '添加标签','route'=>'admin.tag.create'],
-                            ['name' => 'zixun.tag.edit', 'display_name' => '编辑标签','route'=>'admin.tag.edit'],
-                            ['name' => 'zixun.tag.destroy', 'display_name' => '删除标签','route'=>'admin.tag.destroy'],
+                            ['name' => 'zixun.tag.create', 'display_name' => '添加标签', 'route' => 'admin.tag.create'],
+                            ['name' => 'zixun.tag.edit', 'display_name' => '编辑标签', 'route' => 'admin.tag.edit'],
+                            ['name' => 'zixun.tag.destroy', 'display_name' => '删除标签', 'route' => 'admin.tag.destroy'],
                         ]
                     ],
                     [
@@ -117,9 +117,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.article',
                         'icon_id' => '89',
                         'child' => [
-                            ['name' => 'zixun.article.create', 'display_name' => '添加文章','route'=>'admin.article.create'],
-                            ['name' => 'zixun.article.edit', 'display_name' => '编辑文章','route'=>'admin.article.edit'],
-                            ['name' => 'zixun.article.destroy', 'display_name' => '删除文章','route'=>'admin.article.destroy'],
+                            ['name' => 'zixun.article.create', 'display_name' => '添加文章', 'route' => 'admin.article.create'],
+                            ['name' => 'zixun.article.edit', 'display_name' => '编辑文章', 'route' => 'admin.article.edit'],
+                            ['name' => 'zixun.article.destroy', 'display_name' => '删除文章', 'route' => 'admin.article.destroy'],
                         ]
                     ],
                 ]
@@ -136,7 +136,7 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.site',
                         'icon_id' => '25',
                         'child' => [
-                            ['name' => 'config.site.update', 'display_name' => '更新配置','route'=>'admin.site.update']
+                            ['name' => 'config.site.update', 'display_name' => '更新配置', 'route' => 'admin.site.update']
                         ]
                     ],
                     [
@@ -145,9 +145,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.position',
                         'icon_id' => '30',
                         'child' => [
-                            ['name' => 'config.position.create', 'display_name' => '添加广告位','route'=>'admin.position.create'],
-                            ['name' => 'config.position.edit', 'display_name' => '编辑广告位','route'=>'admin.position.edit'],
-                            ['name' => 'config.position.destroy', 'display_name' => '删除广告位','route'=>'admin.position.destroy'],
+                            ['name' => 'config.position.create', 'display_name' => '添加广告位', 'route' => 'admin.position.create'],
+                            ['name' => 'config.position.edit', 'display_name' => '编辑广告位', 'route' => 'admin.position.edit'],
+                            ['name' => 'config.position.destroy', 'display_name' => '删除广告位', 'route' => 'admin.position.destroy'],
                         ]
                     ],
                     [
@@ -156,9 +156,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.advert',
                         'icon_id' => '107',
                         'child' => [
-                            ['name' => 'config.advert.create', 'display_name' => '添加信息','route'=>'admin.advert.create'],
-                            ['name' => 'config.advert.edit', 'display_name' => '编辑信息','route'=>'admin.advert.edit'],
-                            ['name' => 'config.advert.destroy', 'display_name' => '删除信息','route'=>'admin.advert.destroy'],
+                            ['name' => 'config.advert.create', 'display_name' => '添加信息', 'route' => 'admin.advert.create'],
+                            ['name' => 'config.advert.edit', 'display_name' => '编辑信息', 'route' => 'admin.advert.edit'],
+                            ['name' => 'config.advert.destroy', 'display_name' => '删除信息', 'route' => 'admin.advert.destroy'],
                         ]
                     ],
                 ]
@@ -175,9 +175,9 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.member',
                         'icon_id' => '10',
                         'child' => [
-                            ['name' => 'member.member.create', 'display_name' => '添加账号','route'=>'admin.member.create'],
-                            ['name' => 'member.member.edit', 'display_name' => '编辑账号','route'=>'admin.member.edit'],
-                            ['name' => 'member.member.destroy', 'display_name' => '删除账号','route'=>'admin.member.destroy'],
+                            ['name' => 'member.member.create', 'display_name' => '添加账号', 'route' => 'admin.member.create'],
+                            ['name' => 'member.member.edit', 'display_name' => '编辑账号', 'route' => 'admin.member.edit'],
+                            ['name' => 'member.member.destroy', 'display_name' => '删除账号', 'route' => 'admin.member.destroy'],
                         ]
                     ],
                 ]
@@ -200,8 +200,8 @@ class UserTableSeeder extends Seeder
                         'route' => 'admin.message',
                         'icon_id' => '24',
                         'child' => [
-                            ['name' => 'message.message.create', 'display_name' => '推送消息','route'=>'admin.message.create'],
-                            ['name' => 'message.message.destroy', 'display_name' => '删除消息','route'=>'admin.message.destroy'],
+                            ['name' => 'message.message.create', 'display_name' => '推送消息', 'route' => 'admin.message.create'],
+                            ['name' => 'message.message.destroy', 'display_name' => '删除消息', 'route' => 'admin.message.destroy'],
                         ]
                     ],
                 ]
@@ -213,8 +213,8 @@ class UserTableSeeder extends Seeder
             $p1 = \App\Models\Permission::create([
                 'name' => $pem1['name'],
                 'display_name' => $pem1['display_name'],
-                'route' => $pem1['route']??'',
-                'icon_id' => $pem1['icon_id']??1,
+                'route' => $pem1['route'] ?? '',
+                'icon_id' => $pem1['icon_id'] ?? 1,
             ]);
             //为角色添加权限
             $role->givePermissionTo($p1);
@@ -227,8 +227,8 @@ class UserTableSeeder extends Seeder
                         'name' => $pem2['name'],
                         'display_name' => $pem2['display_name'],
                         'parent_id' => $p1->id,
-                        'route' => $pem2['route']??1,
-                        'icon_id' => $pem2['icon_id']??1,
+                        'route' => $pem2['route'] ?? 1,
+                        'icon_id' => $pem2['icon_id'] ?? 1,
                     ]);
                     //为角色添加权限
                     $role->givePermissionTo($p2);
@@ -241,8 +241,8 @@ class UserTableSeeder extends Seeder
                                 'name' => $pem3['name'],
                                 'display_name' => $pem3['display_name'],
                                 'parent_id' => $p2->id,
-                                'route' => $pem3['route']??'',
-                                'icon_id' => $pem3['icon_id']??1,
+                                'route' => $pem3['route'] ?? '',
+                                'icon_id' => $pem3['icon_id'] ?? 1,
                             ]);
                             //为角色添加权限
                             $role->givePermissionTo($p3);
@@ -250,7 +250,6 @@ class UserTableSeeder extends Seeder
                             $user->givePermissionTo($p3);
                         }
                     }
-
                 }
             }
         }

@@ -5,10 +5,10 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
-        "fideloper/proxy": "~3.3",
+        "php": ">=7.1.0",
+        "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.3",
-        "laravel/framework": "5.5.*",
+        "laravel/framework": "5.8.*",
         "laravel/tinker": "~1.0",
         "mews/captcha": "^2.2",
         "simplesoftwareio/simple-qrcode": "^2.0",
@@ -40,8 +40,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         }
     },
     "scripts": {
